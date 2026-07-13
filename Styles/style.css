@@ -1,3 +1,4 @@
+/* === GENERAL & LAYOUT === */
         html {
             scroll-behavior: smooth;
         }
@@ -11,55 +12,35 @@
             padding: 80px 0;
         }
 
-        /* === SEPARADORES Y TÍTULOS DE CATEGORÍA === */
-        .section-header-banner {
-            background: linear-gradient(135deg, #1d1d1d 0%, #111 100%);
-            color: #fff;
-            padding: 30px 20px;
-            text-align: center;
-            border-bottom: 4px solid #ffc107;
-            margin-bottom: 30px;
-            border-radius: 8px;
+        /* === BRANDING === */
+        .brand-hoop {
+            font-weight: 300;
+            color: #ffc107; /* Warning yellow */
+            letter-spacing: 1px;
         }
-        .section-header-banner h2 {
-            font-weight: 800;
-            margin-bottom: 0;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            font-size: 2rem;
-            color: #ffc107;
-        }
-        
-        .destacados-section {
-            background-image: radial-gradient(circle at 10% 20%, rgb(40, 40, 40) 0%, rgb(15, 15, 15) 90%);
-            color: white;
-            border-top: 5px solid #ffc107;
-            border-bottom: 5px solid #ffc107;
-        }
-        .destacados-section h2 {
-            color: #ffc107;
-            font-size: 2.5rem;
+        .brand-loop {
+            font-weight: 900;
+            color: #ffffff;
             text-transform: uppercase;
             letter-spacing: 2px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            background: linear-gradient(45deg, #ffc107, #ff6b6b);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
+
         /* === COMPONENTES: TARJETAS DE PRODUCTOS === */
         .product-card img {
             height: 250px;
             object-fit: cover;
-            width: 100%;
-        }
-        
-        /* Ajuste específico para Jerseys y Balones para que no se corten */
-        .product-item[data-team="jerseys"] img, 
-        .jersey-img,
-        .product-card.jersey-card img {
-            object-fit: contain;
-            background-color: #f8f9fa;
-            padding: 10px;
         }
 
-        /* Player Scroller */
+        /* === COMPONENTES: BOTONES DE FILTRO === */
+        .team-filter .btn {
+            border-radius: 50px;
+        }
+
+        /* === SCROLLER DE JUGADORES === */
         .player-scroller-wrapper {
             background-color: #000;
             padding: 60px 0 40px;
@@ -104,7 +85,8 @@
             font-size: 1.1rem;
             letter-spacing: 1px;
         }
-        /* Custom scroll indicator */
+
+        /* === INDICADOR DE SCROLL === */
         .custom-scroll-track {
             width: 80%;
             max-width: 800px;
@@ -117,28 +99,213 @@
         .custom-scroll-thumb {
             width: 25%;
             height: 100%;
-            background-color: #ffc107; /* Warning yellow */
+            background-color: #1d428a; /* NBA Blue */
             border-radius: 3px;
             position: absolute;
             left: 0;
             transition: left 0.1s ease-out;
         }
 
-        /* === PRODUCTOS SCROLLER === */
-        .product-scroller {
+        /* Acentos de color por equipo */
+        .team-tag {
+            font-size: 0.75rem;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+        .tag-thunder { background-color: #007ac1; color: #fff; }
+        .tag-spurs { background-color: #1d1d1d; color: #fff; }
+        .tag-knicks { background-color: #006bb6; color: #f58426; }
+        .tag-celtics { background-color: #007a33; color: #fff; }
+        .tag-cavaliers { background-color: #860038; color: #fdbb30; }
+
+        /* === SECCIÓN HERO PRODUCTOS DESTACADOS === */
+        .destacados-hero {
+            background: linear-gradient(135deg, #0a0a0a 0%, #1d428a 50%, #0a0a0a 100%);
+            padding: 50px 0 30px;
+            position: relative;
+            overflow: hidden;
+        }
+        .destacados-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: repeating-linear-gradient(45deg, rgba(255,193,7,0.04) 0, rgba(255,193,7,0.04) 1px, transparent 1px, transparent 50px);
+        }
+        .destacados-hero h2 {
+            font-size: 2rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            position: relative;
+        }
+
+        /* === CARRUSEL DE PRODUCTOS DESTACADOS === */
+        .prod-carousel-wrapper {
+            background: linear-gradient(135deg, #0a0a0a 0%, #1d428a 50%, #0a0a0a 100%);
+            padding: 0 0 40px;
+        }
+        .prod-carousel {
             display: flex;
             overflow-x: auto;
             gap: 20px;
-            padding: 20px 0;
+            padding: 0 30px 10px;
             scrollbar-width: none;
-            -ms-overflow-style: none;
-            scroll-snap-type: x mandatory;
-            scroll-behavior: smooth;
         }
-        .product-scroller::-webkit-scrollbar {
-            display: none;
-        }
-        .product-scroller .col-md-4 {
-            min-width: 300px;
+        .prod-carousel::-webkit-scrollbar { display: none; }
+        .prod-carousel-card {
+            min-width: 240px;
+            max-width: 240px;
             scroll-snap-align: start;
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            flex-shrink: 0;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .prod-carousel-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+        }
+        .prod-carousel-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background: #f8f9fa;
+        }
+        .prod-carousel-card .card-body { padding: 14px; }
+        .prod-carousel-card h6 { font-size: 0.9rem; font-weight: 700; margin-bottom: 4px; }
+        .prod-carousel-card .price { color: #1d428a; font-weight: 700; font-size: 0.95rem; }
+
+        /* === SEPARADORES DE EQUIPO EN JERSEYS === */
+        .team-section-header {
+            display: flex;
+            align-items: center;
+            padding: 12px 20px;
+            border-radius: 8px;
+            margin: 30px 0 20px;
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        .team-section-header.thunder { background: linear-gradient(90deg, #007ac1, #1d3a6e); }
+        .team-section-header.spurs   { background: linear-gradient(90deg, #1d1d1d, #444); }
+        .team-section-header.knicks  { background: linear-gradient(90deg, #006bb6, #f58426); }
+        .team-section-header.celtics { background: linear-gradient(90deg, #007a33, #004d21); }
+        .team-section-header.cavaliers { background: linear-gradient(90deg, #860038, #fdbb30); color: #1a1a1a; }
+
+        /* === TARJETAS DE JERSEY: IMAGEN EN MODO CONTAIN === */
+        .jersey-card img {
+            height: 220px;
+            object-fit: contain;
+            background: #f8f9fa;
+            padding: 10px;
+        }
+
+        /* === FORMULARIO DE CONTACTO === */
+        :root {
+            --primary-color: #FFC107;
+            --primary-color-darker: #CC9A06;
+            --white: #fff;
+        }
+        .btn.send-button {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+            color: #212529;
+        }
+        .btn.send-button:hover {
+            background-color: var(--primary-color-darker);
+            border-color: var(--primary-color-darker);
+            color: #212529;
+        }
+        .image-bg {
+            background-image: url(../img-contacto/contacto-img.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 450px;
+            width: 100%;
+        }
+        .contenedor {
+            max-width: 90rem;
+            margin: 0 auto;
+        }
+        .contact-section {
+            margin-top: -10rem;
+            background-color: var(--white);
+            position: relative;
+            z-index: 1;
+            border-radius: 1rem;
+        }
+
+        /* === LOADER / PANTALLA DE CARGA === */
+        #page-loader {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100vw; height: 100vh;
+            background-color: #111; /* Dark bg */
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: opacity 0.5s ease;
+        }
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid rgba(255,193,7, 0.3); /* Warning color */
+            border-top-color: #ffc107;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* === ANIMACIONES HOVER === */
+        /* Tarjetas */
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 1rem 3rem rgba(0,0,0,0.15) !important;
+        }
+        /* Botones */
+        .btn {
+            transition: all 0.2s ease-in-out;
+        }
+        .btn:hover {
+            transform: scale(1.03);
+        }
+        /* Navbar Links */
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 50%;
+            background-color: #ffc107;
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+        .nav-link:hover::after, .nav-link.active::after {
+            width: 100%;
+        }
+
+        /* === ANIMACIONES DE ENTRADA (Scroll) === */
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in-up.visible {
+            opacity: 1;
+            transform: translateY(0);
         }
