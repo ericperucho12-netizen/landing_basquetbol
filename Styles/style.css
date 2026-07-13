@@ -10,9 +10,53 @@
         .section-padding {
             padding: 80px 0;
         }
+
+        /* === SEPARADORES Y TÍTULOS DE CATEGORÍA === */
+        .section-header-banner {
+            background: linear-gradient(135deg, #1d1d1d 0%, #111 100%);
+            color: #fff;
+            padding: 30px 20px;
+            text-align: center;
+            border-bottom: 4px solid #ffc107;
+            margin-bottom: 30px;
+            border-radius: 8px;
+        }
+        .section-header-banner h2 {
+            font-weight: 800;
+            margin-bottom: 0;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-size: 2rem;
+            color: #ffc107;
+        }
+        
+        .destacados-section {
+            background-image: radial-gradient(circle at 10% 20%, rgb(40, 40, 40) 0%, rgb(15, 15, 15) 90%);
+            color: white;
+            border-top: 5px solid #ffc107;
+            border-bottom: 5px solid #ffc107;
+        }
+        .destacados-section h2 {
+            color: #ffc107;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        /* === COMPONENTES: TARJETAS DE PRODUCTOS === */
         .product-card img {
             height: 250px;
             object-fit: cover;
+            width: 100%;
+        }
+        
+        /* Ajuste específico para Jerseys y Balones para que no se corten */
+        .product-item[data-team="jerseys"] img, 
+        .jersey-img,
+        .product-card.jersey-card img {
+            object-fit: contain;
+            background-color: #f8f9fa;
+            padding: 10px;
         }
 
         /* Player Scroller */
@@ -73,9 +117,28 @@
         .custom-scroll-thumb {
             width: 25%;
             height: 100%;
-            background-color: #1d428a; /* NBA Blue */
+            background-color: #ffc107; /* Warning yellow */
             border-radius: 3px;
             position: absolute;
             left: 0;
             transition: left 0.1s ease-out;
+        }
+
+        /* === PRODUCTOS SCROLLER === */
+        .product-scroller {
+            display: flex;
+            overflow-x: auto;
+            gap: 20px;
+            padding: 20px 0;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+        }
+        .product-scroller::-webkit-scrollbar {
+            display: none;
+        }
+        .product-scroller .col-md-4 {
+            min-width: 300px;
+            scroll-snap-align: start;
         }

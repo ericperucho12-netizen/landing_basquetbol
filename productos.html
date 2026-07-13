@@ -1,0 +1,359 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - hooploop</title>
+    <link rel="preload" href="/landing_basquetbol/Styles/normalice.css" as="styles">
+    <link rel="preload" href="/landing_basquetbol/Styles/style.css" as="styles">
+
+    <link rel="stylesheet" href="/landing_basquetbol/Styles/style.css">
+    <link rel="stylesheet" href="/landing_basquetbol/Styles/normalice.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-warning" href="/landing_basquetbol/index.html"><span class="brand-hoop">hoop</span><span class="brand-loop">loop</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/landing_basquetbol/index.html#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/landing_basquetbol/index.html#acerca">Nosotros</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="productosDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="productosDropdown">
+                            <li><a class="dropdown-item active" href="/landing_basquetbol/gorras.html">Gorras</a></li>
+                            <li><a class="dropdown-item" href="/landing_basquetbol/tenis.html">Tenis</a></li>
+                            <li><a class="dropdown-item" href="/landing_basquetbol/jerseys.html">Jerseys</a></li>
+                            <li><a class="dropdown-item" href="/landing_basquetbol/balones.html">Balones</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="/landing_basquetbol/index.html#testimonios">Testimonios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/landing_basquetbol/index.html#videos">Videos NBA</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/landing_basquetbol/index.html#contacto">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link text-warning" href="#" aria-label="Carrito de compras"><i
+                                class="bi bi-cart-fill fs-5"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Productos Destacados -->
+    <section id="destacados" class="section-padding destacados-section">
+        <div class="container-fluid px-4 px-md-5">
+            <div class="position-relative mb-5 text-center">
+                <h2 class="fw-bold mb-0">Productos Destacados</h2>
+            </div>
+            
+            <div class="product-scroller">
+                <!-- Zapatillas -->
+                <div class="col-md-4">
+                    <div class="card h-100 product-card shadow-sm bg-dark text-white border-warning">
+                        <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            class="card-img-top" alt="Zapatillas">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Zapatillas Pro Court</h5>
+                            <p class="card-text text-warning fw-bold">$2,599.00 MXN</p>
+                            <a href="#" class="btn btn-warning">Comprar Ahora</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Balón -->
+                <div class="col-md-4">
+                    <div class="card h-100 product-card shadow-sm bg-dark text-white border-warning">
+                        <img src="https://images.unsplash.com/photo-1515523110800-9415d13b84a8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            class="card-img-top" alt="Balón">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Balón Oficial Elite</h5>
+                            <p class="card-text text-warning fw-bold">$899.00 MXN</p>
+                            <a href="#" class="btn btn-warning">Comprar Ahora</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Jersey -->
+                <div class="col-md-4">
+                    <div class="card h-100 product-card jersey-card shadow-sm bg-dark text-white border-warning">
+                        <img src="https://cdn11.bigcommerce.com/s-bjbio4l8pu/images/stencil/1280x1280/products/854/12883/Icon_Swingman_Any_Name_2up_Ledger__64391.1782425821.png?c=2"
+                            class="card-img-top bg-light" alt="Camiseta">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Jersey Transpirable</h5>
+                            <p class="card-text text-warning fw-bold">$699.00 MXN</p>
+                            <a href="#" class="btn btn-warning">Comprar Ahora</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Extra Gorra -->
+                <div class="col-md-4">
+                    <div class="card h-100 product-card shadow-sm bg-dark text-white border-warning">
+                        <img src="https://cdn.shopify.com/s/files/1/0595/9915/9452/files/60755341_9FIFTY_NBA25CHAMPS950OKLTHUBLK_OKLTHU_BLK_3QL_900x.jpg?v=1749493412"
+                            class="card-img-top" alt="Gorra Thunder">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Snapback Thunder</h5>
+                            <p class="card-text text-warning fw-bold">$1,299.00 MXN</p>
+                            <a href="#" class="btn btn-warning">Comprar Ahora</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Extra Sudadera -->
+                <div class="col-md-4">
+                    <div class="card h-100 product-card shadow-sm bg-dark text-white border-warning">
+                        <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            class="card-img-top" alt="Sudadera NBA">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Sudadera Warm-Up</h5>
+                            <p class="card-text text-warning fw-bold">$1,899.00 MXN</p>
+                            <a href="#" class="btn btn-warning">Comprar Ahora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="custom-scroll-track mt-4 mx-auto">
+                <div class="custom-scroll-thumb product-thumb"></div>
+            </div>
+        </div>
+                            class="card-img-top" alt="Oklahoma-azul">
+                                    </div>
+        </div>
+    </section>
+
+    <!-- Gorras Section -->
+    <div class="container mt-5">
+        <div class="section-header-banner">
+            <h2>Gorras Oficiales</h2>
+            <p class="mb-0 mt-2">Representa a tu equipo favorito de la NBA dentro y fuera de la cancha.</p>
+        </div>
+    </div>
+    <section id="gorras" class="section-padding pt-4">
+        <div class="container">
+            <div class="row g-4" id="productGrid">
+                <!-- Thunder -->
+                <div class="col-md-4 col-lg-3 product-item" data-team="thunder">
+                    <div class="card h-100 product-card shadow-sm">
+                        <img src="https://cdn.shopify.com/s/files/1/0595/9915/9452/files/60755341_9FIFTY_NBA25CHAMPS950OKLTHUBLK_OKLTHU_BLK_3QL_900x.jpg?v=1749493412" class="card-img-top" alt="Gorra Oklahoma City Thunder">
+                        <div class="card-body text-center">
+                            <span class="badge tag-thunder team-tag mb-2">OKC Thunder</span>
+                            <h5 class="card-title fw-bold">Snapback Thunder</h5>
+                            <p class="card-text text-muted">,299.00</p>
+                            <a href="#" class="btn btn-outline-dark">Comprar Ahora</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Spurs -->
+                <div class="col-md-4 col-lg-3 product-item" data-team="spurs">
+                    <div class="card h-100 product-card shadow-sm">
+                        <img src="https://cdn.shopify.com/s/files/1/0595/9915/9452/files/60761377_9FIFTY_NBA25CE950_SAASPU_OTC_3QR_900x.png?v=1763095367" class="card-img-top" alt="Gorra San Antonio Spurs">
+                        <div class="card-body text-center">
+                            <span class="badge tag-spurs team-tag mb-2">Spurs</span>
+                            <h5 class="card-title fw-bold">Snapback Spurs</h5>
+                            <p class="card-text text-muted">,099.00</p>
+                            <a href="#" class="btn btn-outline-dark">Comprar Ahora</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Knicks -->
+                <div class="col-md-4 col-lg-3 product-item" data-team="knicks">
+                    <div class="card h-100 product-card shadow-sm">
+                        <img src="https://cdn.shopify.com/s/files/1/0595/9915/9452/files/60755468_9FORTYMC_NBATEAMSTOCK_NEYKNI_OTC_3QL_900x.png?v=1762155212" class="card-img-top" alt="Gorra New York Knicks">
+                        <div class="card-body text-center">
+                            <span class="badge tag-knicks team-tag mb-2">Knicks</span>
+                            <h5 class="card-title fw-bold">Snapback Knicks</h5>
+                            <p class="card-text text-muted">.99</p>
+                            <a href="#" class="btn btn-outline-dark">Comprar Ahora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tenis Section -->
+    <div class="container mt-5">
+        <div class="section-header-banner">
+            <h2>Tenis Oficiales</h2>
+            <p class="mb-0 mt-2">Encuentra el calzado de tu equipo favorito, listo para dominar la cancha.</p>
+        </div>
+    </div>
+    <section id="tenis" class="section-padding pt-4">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Destacado: Zapatillas Pro Court -->
+                <div class="col-md-4 col-lg-3 product-item">
+                    <div class="card h-100 product-card shadow-sm border-warning">
+                        <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            class="card-img-top" alt="Zapatillas">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Zapatillas Pro Court</h5>
+                            <p class="card-text text-warning fw-bold">,599.00 MXN</p>
+                            <a href="#" class="btn btn-warning">Comprar Ahora</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Thunder -->
+                <div class="col-md-4 col-lg-3 product-item" data-team="thunder">
+                    <div class="card h-100 product-card shadow-sm">
+                        <img src="https://images.novelship.com/product/new_balance_two_wxy__my_city_pack___oklahoma_city__0_72954.jpeg?fit=fill&bg=FFFFFF&trim=color&q=75&w=1200&h=1200&pad=80&fm=webp&auto=compress" class="card-img-top" alt="Tenis Oklahoma City Thunder">
+                        <div class="card-body text-center">
+                            <span class="badge tag-thunder team-tag mb-2">OKC Thunder</span>
+                            <h5 class="card-title fw-bold">High-Top Pro</h5>
+                            <p class="card-text text-muted">,200.99</p>
+                            <a href="#" class="btn btn-outline-dark">Comprar Ahora</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Spurs -->
+                <div class="col-md-4 col-lg-3 product-item" data-team="spurs">
+                    <div class="card h-100 product-card shadow-sm">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_883712-CBT74884413660_032024-O-tenis-de-baloncesto-spurs-23-profesional.webp" class="card-img-top" alt="Tenis San Antonio Spurs">
+                        <div class="card-body text-center">
+                            <span class="badge tag-spurs team-tag mb-2">Spurs</span>
+                            <h5 class="card-title fw-bold">High-Top Pro</h5>
+                            <p class="card-text text-muted">,800.99</p>
+                            <a href="#" class="btn btn-outline-dark">Comprar Ahora</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Knicks -->
+                <div class="col-md-4 col-lg-3 product-item" data-team="knicks">
+                    <div class="card h-100 product-card shadow-sm">
+                        <img src="https://i.pinimg.com/originals/a5/f7/c4/a5f7c4fe93b6e1597e9a363f37dbab83.jpg" class="card-img-top" alt="Tenis New York Knicks">
+                        <div class="card-body text-center">
+                            <span class="badge tag-knicks team-tag mb-2">Knicks</span>
+                            <h5 class="card-title fw-bold">High-Top Pro</h5>
+                            <p class="card-text text-muted">,400.00</p>
+                            <a href="#" class="btn btn-outline-dark">Comprar Ahora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jerseys Section -->
+    <div class="container mt-5">
+        <div class="section-header-banner">
+            <h2>Jerseys Oficiales</h2>
+            <p class="mb-0 mt-2">Viste los colores de las grandes estrellas de la liga.</p>
+        </div>
+    </div>
+    <section id="jerseys" class="section-padding pt-4">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <!-- Destacado: Jersey Transpirable -->
+                <div class="col-md-4">
+                    <div class="card h-100 product-card jersey-card shadow-sm border-warning">
+                        <img src="https://cdn11.bigcommerce.com/s-bjbio4l8pu/images/stencil/1280x1280/products/854/12883/Icon_Swingman_Any_Name_2up_Ledger__64391.1782425821.png?c=2"
+                            class="card-img-top bg-light" alt="Camiseta">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Jersey Transpirable</h5>
+                            <p class="card-text text-warning fw-bold">.00 MXN</p>
+                            <a href="#" class="btn btn-warning">Comprar Ahora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="text-center fw-bold mb-5">Oklahoma City Thunder</h3>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 product-card jersey-card shadow-sm">
+                        <img src="https://images.footballfanatics.com/oklahoma-city-thunder/oklahoma-city-thunder-nike-icon-edition-swingman-jersey-blue-jared-mccain-unisex_ss5_p-203887195+pv-2+u-cc0x5rf6gxwf8rfib0rn+v-bcwff0yfjesvevpvqbtz.png?_hv=2&w=1018"
+                            class="card-img-top" alt="Oklahoma-azul">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Jersey Azul</h5>
+                            <p class="card-text text-muted">$2,250.00</p>
+                            <a href="#" class="btn btn-outline-dark">Comprar Ahora</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 product-card shadow-sm">
+                        <img src="https://i1.t4s.cz/products/dn2088-100/nike-oklahoma-city-thunder-acc-edition-jersey-937768-dn2088-100.png"
+                            class="card-img-top" alt="Oklahoma-blanco">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Jersey Blanco</h5>
+                            <p class="card-text text-muted">$2,449.00</p>
+                            <a href="#" class="btn btn-outline-dark">Comprar Ahora</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 product-card shadow-sm">
+                        <img src="https://www.hoopsheaven.com.au/cdn/shop/files/AURORA_DO9537-893_PHSFH001-2000_grande.png?v=1736150281"
+                            class="card-img-top" alt="Oklahoma-naranja">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Jersey Naranja</h5>
+                            <p class="card-text text-muted">$2,329.00</p>
+                            <a href="#" class="btn btn-outline-dark">Comprar Ahora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <h3 class="text-center fw-bold mb-5">San Antonio Spurs</h3>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 product-card shadow-sm">
+                        <img src="https://cdn11.bigcommerce.com/s-bjbio4l8pu/images/stencil/1280x1280/products/854/12883/Icon_Swingman_Any_Name_2up_Ledger__64391.1782425821.png?c=2"
+                            class="card-img-top" alt="Spurs-negro">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Jersey Negro</h5>
+                            <p class="card-text text-muted">$2,349.00</p>
+                            <a href="#" class="btn btn-outline-dark">Comprar Ahora</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 product-card shadow-sm">
+                        <img src="https://images.footballfanatics.com/san-antonio-spurs/unisex-jordan-brand-victor-wembanyama-silver-san-antonio-spurs-swingman-jersey-statement-edition_ss5_p-202926212+u-sdoa0nfxmc92n9qe55cf+v-egabaooebswifqcnbpjv.png?_hv=2&w=600"
+                            class="card-img-top" alt="Spurs-blanco">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Jersey Blanco</h5>
+                            <p class="card-text text-muted">$2,698.00</p>
+                            <a href="#" class="btn btn-outline-dark">Comprar Ahora</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 product-card shadow-sm">
+                        <img src="https://cdn.nba.com/manage/2023/10/DX8519-100_DPC_A_1X1-588x588.png"
+                            class="card-img-top" alt="Spurs-blanco-naranja">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Jersey Blanco y Naranja</h5>
+                            <p class="card-text text-muted">$2,375.00</p>
+                            <a href="#" class="btn btn-outline-dark">Comprar Ahora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <h3 class="text-center fw-bold mb-5">New York Knicks</h3>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 product-card shadow-sm">
+                        <img src="https://images.footballfanatics.com/new-york-knicks/mens-fanatics-jose-alvarado-black-new-york-knicks-fast-break-replica-jersey-statement-edition_ss5_p-203949378+u-evpnt1tug3mk0jdtzq4b+v-unkmrkizjf4m4zuojshc.png?_hv=2&w=600"
+                            class="card-img-top" alt="NYK-negro">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Jersey Negro</h5>
+                            <p class="card-text text-muted">$2,650.00</p>
+                            <a href="#" class="btn btn-outline-dark">Comprar Ahora</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 product-card shadow-sm">
+                        <img src="https://fanatics.frgimages.com/new-york-knicks/unisex-nike-jalen-brunson-blue-new-york-knicks-2026-nba-finals-patch-swingman-jersey-icon-edition_ss5_p-204334847+pv-1+u-5rr8vvj6ovowtl1lpw5a+v-nl4accqfbt4eztecm10j.png?_hv=2&w=1018"
+                            class="card-img-top" alt="NYK-azul">
+                        

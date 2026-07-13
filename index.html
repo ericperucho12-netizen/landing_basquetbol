@@ -196,51 +196,79 @@
         </div>
     </section>
 
-    <!-- Productos -->
-    <section id="productos" class="section-padding">
-        <div class="container">
+    <!-- Productos Destacados -->
+    <section id="productos" class="section-padding destacados-section">
+        <div class="container-fluid px-4 px-md-5">
             <div class="position-relative mb-5 text-center">
                 <h2 class="fw-bold mb-0">Productos Destacados</h2>
-                <a href="#" class="btn btn-outline-dark fw-bold position-absolute end-0 top-50 translate-middle-y d-none d-md-inline-block">Ver más <i class="bi bi-arrow-right ms-1"></i></a>
+                <a href="/landing_basquetbol/productos.html" class="btn btn-outline-warning fw-bold mt-3 d-inline-block">Ver Colección Completa <i class="bi bi-arrow-right ms-1"></i></a>
             </div>
-            <!-- Botón visible en móviles -->
-            <div class="text-end mb-4 d-md-none">
-                <a href="#" class="btn btn-outline-dark btn-sm fw-bold">Ver más <i class="bi bi-arrow-right ms-1"></i></a>
-            </div>
-            <div class="row g-4">
+            
+            <div class="product-scroller">
+                <!-- Zapatillas -->
                 <div class="col-md-4">
-                    <div class="card h-100 product-card shadow-sm">
+                    <div class="card h-100 product-card shadow-sm bg-dark text-white border-warning">
                         <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
                             class="card-img-top" alt="Zapatillas">
                         <div class="card-body text-center">
                             <h5 class="card-title fw-bold">Zapatillas Pro Court</h5>
-                            <p class="card-text text-muted">$129.99</p>
-                            <a href="#" class="btn btn-outline-dark">Comprar Ahora</a>
+                            <p class="card-text text-warning fw-bold">$2,599.00 MXN</p>
+                            <a href="#" class="btn btn-warning">Comprar Ahora</a>
                         </div>
                     </div>
                 </div>
+                <!-- Balón -->
                 <div class="col-md-4">
-                    <div class="card h-100 product-card shadow-sm">
+                    <div class="card h-100 product-card shadow-sm bg-dark text-white border-warning">
                         <img src="https://images.unsplash.com/photo-1515523110800-9415d13b84a8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
                             class="card-img-top" alt="Balón">
                         <div class="card-body text-center">
                             <h5 class="card-title fw-bold">Balón Oficial Elite</h5>
-                            <p class="card-text text-muted">$45.00</p>
-                            <a href="#" class="btn btn-outline-dark">Comprar Ahora</a>
+                            <p class="card-text text-warning fw-bold">$899.00 MXN</p>
+                            <a href="#" class="btn btn-warning">Comprar Ahora</a>
                         </div>
                     </div>
                 </div>
+                <!-- Jersey -->
                 <div class="col-md-4">
-                    <div class="card h-100 product-card shadow-sm">
-                        <img src="https://images.unsplash.com/photo-1542652694-40abf526446e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                            class="card-img-top" alt="Camiseta">
+                    <div class="card h-100 product-card jersey-card shadow-sm bg-dark text-white border-warning">
+                        <img src="https://cdn11.bigcommerce.com/s-bjbio4l8pu/images/stencil/1280x1280/products/854/12883/Icon_Swingman_Any_Name_2up_Ledger__64391.1782425821.png?c=2"
+                            class="card-img-top bg-light" alt="Camiseta">
                         <div class="card-body text-center">
                             <h5 class="card-title fw-bold">Jersey Transpirable</h5>
-                            <p class="card-text text-muted">$35.50</p>
-                            <a href="#" class="btn btn-outline-dark">Comprar Ahora</a>
+                            <p class="card-text text-warning fw-bold">$699.00 MXN</p>
+                            <a href="#" class="btn btn-warning">Comprar Ahora</a>
                         </div>
                     </div>
                 </div>
+                <!-- Extra Gorra -->
+                <div class="col-md-4">
+                    <div class="card h-100 product-card shadow-sm bg-dark text-white border-warning">
+                        <img src="https://cdn.shopify.com/s/files/1/0595/9915/9452/files/60755341_9FIFTY_NBA25CHAMPS950OKLTHUBLK_OKLTHU_BLK_3QL_900x.jpg?v=1749493412"
+                            class="card-img-top" alt="Gorra Thunder">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Snapback Thunder</h5>
+                            <p class="card-text text-warning fw-bold">$1,299.00 MXN</p>
+                            <a href="#" class="btn btn-warning">Comprar Ahora</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Extra Sudadera -->
+                <div class="col-md-4">
+                    <div class="card h-100 product-card shadow-sm bg-dark text-white border-warning">
+                        <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            class="card-img-top" alt="Sudadera NBA">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Sudadera Warm-Up</h5>
+                            <p class="card-text text-warning fw-bold">$1,899.00 MXN</p>
+                            <a href="#" class="btn btn-warning">Comprar Ahora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="custom-scroll-track mt-4 mx-auto">
+                <div class="custom-scroll-thumb product-thumb"></div>
             </div>
         </div>
     </section>
@@ -356,47 +384,69 @@
 
     <!-- Custom Scripts -->
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const scroller = document.querySelector('.player-scroller');
-            const thumb = document.querySelector('.custom-scroll-thumb');
+        document.addEventListener('DOMContentLoaded', function () {
+            // Player Scroller
+            const playerScroller = document.querySelector('.player-scroller');
+            const playerThumb = document.querySelector('.custom-scroll-thumb:not(.product-thumb)');
             
-            if(scroller && thumb) {
-                const updateThumb = () => {
-                    // Calculate how much of the content is visible
-                    const scrollRatio = scroller.clientWidth / scroller.scrollWidth;
-                    
-                    if(scrollRatio >= 1) {
-                        thumb.style.width = '100%';
-                        thumb.style.left = '0px';
+            if (playerScroller && playerThumb) {
+                const updatePlayerThumb = () => {
+                    const scrollRatio = playerScroller.clientWidth / playerScroller.scrollWidth;
+                    if (scrollRatio >= 1) {
+                        playerThumb.style.width = '100%';
+                        playerThumb.style.left = '0px';
                         return;
                     }
-                    
-                    // Set thumb width relative to visible area
                     const thumbWidthPercent = Math.max(scrollRatio * 100, 10);
-                    thumb.style.width = `${thumbWidthPercent}%`;
+                    playerThumb.style.width = `${thumbWidthPercent}%`;
                     
-                    // Calculate left position based on scroll percentage
-                    const maxScrollLeft = scroller.scrollWidth - scroller.clientWidth;
-                    const scrollPercent = scroller.scrollLeft / maxScrollLeft;
+                    const maxScrollLeft = playerScroller.scrollWidth - playerScroller.clientWidth;
+                    const scrollPercent = playerScroller.scrollLeft / maxScrollLeft;
                     const maxThumbLeft = 100 - thumbWidthPercent;
-                    
-                    thumb.style.left = `${scrollPercent * maxThumbLeft}%`;
+                    playerThumb.style.left = `${scrollPercent * maxThumbLeft}%`;
                 };
 
-                scroller.addEventListener('scroll', updateThumb);
-                window.addEventListener('resize', updateThumb);
+                playerScroller.addEventListener('scroll', updatePlayerThumb);
+                window.addEventListener('resize', updatePlayerThumb);
+                updatePlayerThumb();
                 
-                // Initialize
-                updateThumb();
-                
-                // Allow vertical mouse wheel to scroll horizontally on desktop
-                scroller.addEventListener('wheel', (e) => {
+                playerScroller.addEventListener('wheel', (e) => {
                     if (e.deltaY !== 0) {
                         e.preventDefault();
-                        scroller.scrollBy({
-                            left: e.deltaY < 0 ? -280 : 280, // Scroll by one card width
-                            behavior: 'smooth'
-                        });
+                        playerScroller.scrollLeft += e.deltaY;
+                    }
+                });
+            }
+
+            // Product Scroller
+            const productScroller = document.querySelector('.product-scroller');
+            const productThumb = document.querySelector('.product-thumb');
+            
+            if (productScroller && productThumb) {
+                const updateProductThumb = () => {
+                    const scrollRatio = productScroller.clientWidth / productScroller.scrollWidth;
+                    if (scrollRatio >= 1) {
+                        productThumb.style.width = '100%';
+                        productThumb.style.left = '0px';
+                        return;
+                    }
+                    const thumbWidthPercent = Math.max(scrollRatio * 100, 10);
+                    productThumb.style.width = `${thumbWidthPercent}%`;
+                    
+                    const maxScrollLeft = productScroller.scrollWidth - productScroller.clientWidth;
+                    const scrollPercent = productScroller.scrollLeft / maxScrollLeft;
+                    const maxThumbLeft = 100 - thumbWidthPercent;
+                    productThumb.style.left = `${scrollPercent * maxThumbLeft}%`;
+                };
+
+                productScroller.addEventListener('scroll', updateProductThumb);
+                window.addEventListener('resize', updateProductThumb);
+                updateProductThumb();
+                
+                productScroller.addEventListener('wheel', (e) => {
+                    if (e.deltaY !== 0) {
+                        e.preventDefault();
+                        productScroller.scrollLeft += e.deltaY;
                     }
                 });
             }
