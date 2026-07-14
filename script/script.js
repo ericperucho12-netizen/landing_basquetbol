@@ -101,6 +101,9 @@ document.addEventListener("DOMContentLoaded", function() {
                     const team = item.dataset.team;
                     item.style.display = (filter === 'all' || team === filter || team === 'all') ? '' : 'none';
                 });
+                grid.querySelectorAll('.team-section-header').forEach(header => {
+                    header.style.display = (filter === 'all' || header.classList.contains(filter)) ? '' : 'none';
+                });
             });
         });
     });
