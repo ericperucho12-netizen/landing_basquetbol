@@ -27,7 +27,9 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container">
-      <a class="navbar-brand fw-bold text-warning" href="#">HOOP DREAMS</a>
+      <a class="navbar-brand d-flex align-items-center" href="/landing_basquetbol/index.html">
+          <img src="/landing_basquetbol/img/Logo.png" alt="Hooploop Logo" height="60">
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -40,8 +42,14 @@
           <li class="nav-item"><a class="nav-link" href="/landing_basquetbol/index.html#testimonios">Testimonios</a></li>
           <li class="nav-item"><a class="nav-link" href="/landing_basquetbol/index.html#videos">Videos NBA</a></li>
           <li class="nav-item"><a class="nav-link active" aria-current="page" href="/landing_basquetbol/contacto.html">Contacto</a></li>
-          <li class="nav-item"><a class="nav-link text-warning" href="#" aria-label="Carrito de compras"><i
-                class="bi bi-cart-fill fs-5"></i></a></li>
+          <li class="nav-item">
+              <a class="nav-link text-warning position-relative" href="#" aria-label="Carrito de compras" id="cart-icon">
+                  <i class="bi bi-cart-fill fs-5"></i>
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger cart-badge" style="display:none; font-size: 0.65rem;">
+                      0
+                  </span>
+              </a>
+          </li>
         </ul>
       </div>
     </div>
@@ -215,8 +223,10 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4 col-lg-4 mb-4">
-          <h5 class="text-warning fw-bold mb-3">HOOP DREAMS</h5>
-          <p class="text-muted">Tu tienda de confianza para todo el equipamiento de baloncesto. Encuentra calidad,
+          <h5 class="mb-3">
+              <img src="/landing_basquetbol/img/Logo.png" alt="Hooploop Logo" height="60">
+          </h5>
+          <p class="text-light opacity-75">Tu tienda de confianza para todo el equipamiento de baloncesto. Encuentra calidad,
             estilo y el mejor rendimiento para la cancha.</p>
         </div>
         <div class="col-md-4 col-lg-4 mb-4">
@@ -230,9 +240,9 @@
         </div>
         <div class="col-md-4 col-lg-4 mb-4">
           <h5 class="text-warning fw-bold mb-3">Contacto</h5>
-          <p class="text-muted mb-1"><i class="bi bi-envelope me-2"></i> info@hoopdreams.com</p>
-          <p class="text-muted mb-1"><i class="bi bi-telephone me-2"></i> +1 234 567 8900</p>
-          <p class="text-muted mb-3"><i class="bi bi-geo-alt me-2"></i> Ciudad Deportiva, CP 12345</p>
+          <p class="text-light opacity-75 mb-1"><i class="bi bi-envelope me-2"></i> info@hooploop.com</p>
+          <p class="text-light opacity-75 mb-1"><i class="bi bi-telephone me-2"></i> +1 234 567 8900</p>
+          <p class="text-light opacity-75 mb-3"><i class="bi bi-geo-alt me-2"></i> Ciudad Deportiva, CP 12345</p>
           <div>
             <a href="#" class="text-white me-3 fs-5 opacity-75"><i class="bi bi-facebook"></i></a>
             <a href="#" class="text-white me-3 fs-5 opacity-75"><i class="bi bi-instagram"></i></a>
@@ -243,7 +253,7 @@
       <hr class="mb-4 border-secondary">
       <div class="row align-items-center">
         <div class="col-md-12 text-center">
-          <p class="mb-0 text-muted"><small>&copy; 2026 Hoop Dreams. Todos los derechos reservados.</small></p>
+          <p class="mb-0 text-light opacity-75"><small>&copy; 2026 hooploop. Todos los derechos reservados.</small></p>
         </div>
       </div>
     </div>
